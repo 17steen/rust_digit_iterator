@@ -1,25 +1,25 @@
-pub struct DigitIterator<const N: u64> {
+pub struct DigitIterator<const BASE: u64> {
     curr: u64,
 }
 
-impl<const N: u64> Iterator for DigitIterator<N> {
+impl<const BASE: u64> Iterator for DigitIterator<BASE> {
     type Item = u64;
     fn next(&mut self) -> Option<u64> {
         if self.curr == 0 {
             return None;
         }
-        let digit = self.curr % N;
-        self.curr /= N;
+        let digit = self.curr % BASE;
+        self.curr /= BASE;
         Some(digit)
     }
 }
 
-pub trait IntoDigitIterator {
-    fn into_digits<const N: u64>(&self) -> DigitIterator<N>;
+pub trait AsDigitIterator {
+    fn as_digits<const BASE: u64>(&self) -> DigitIterator<BASE>;
 }
 
-impl IntoDigitIterator for u64 {
-    fn into_digits<const N: u64>(&self) -> DigitIterator<N> {
+impl AsDigitIterator for u64 {
+    fn as_digits<const BASE: u64>(&self) -> DigitIterator<BASE> {
         DigitIterator { curr: *self }
     }
 }
