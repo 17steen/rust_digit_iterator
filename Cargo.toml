@@ -1,7 +1,7 @@
 [package]
 name = "digit_iterator"
 version = "0.1.0"
-authors = ["Robin Oger <robinoger1207@gmail.com>"]
+authors = ["Robin Oger <robin.oger.work@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
