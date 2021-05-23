@@ -1,5 +1,5 @@
 [package]
-name = "digit_iterator"
+name = "digit-iterator"
 version = "0.1.0"
 authors = ["Robin Oger <robin.oger.work@gmail.com>"]
 edition = "2018"
