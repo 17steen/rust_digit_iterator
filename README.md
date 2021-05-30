@@ -19,6 +19,6 @@ assert_eq!(123, 6);
 let n = 0xBABE;
 let digits = n.as_digits::<16>().collect_vec();
 //notice the inverted order
-assert_eq(digits, vec![0xE, 0xB, 0xA, 0xB]);
+assert_eq!(digits, vec![0xE, 0xB, 0xA, 0xB]);
 ```
 
