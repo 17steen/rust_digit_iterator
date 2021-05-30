@@ -2,7 +2,7 @@
 
 Simple library allowing you to quickly iterate over digits of unsigned integers.
 
-calling `as_digits::<BASE>()` results in an Iterator, any function implementing Iterator will then be available
+Calling `as_digits::<BASE>()` results in an Iterator, any function implementing Iterator will then be available.
 
 
 ###### Getting the sum:
