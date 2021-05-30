@@ -7,7 +7,7 @@ calling `as_digits::<BASE>()` results in an Iterator, any function implementing 
 
 ###### Getting the sum:
 
-```rs
+```rust
 let n = 123;
 let digit_sum = n.as_digits::<10>().sum(); 
 assert_eq!(123, 6);
@@ -15,7 +15,7 @@ assert_eq!(123, 6);
 
 
 ###### Placing them in a vector:
-```rs
+```rust
 let n = 0xBABE;
 let digits = n.as_digits::<16>().collect_vec();
 //notice the inverted order
