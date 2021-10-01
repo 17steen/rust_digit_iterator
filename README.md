@@ -10,7 +10,7 @@ Calling `as_digits::<BASE>()` results in an Iterator, any function implementing 
 ```rust
 let n = 123;
 let digit_sum = n.as_digits::<10>().sum(); 
-assert_eq!(123, 6);
+assert_eq!(digit_sum, 6);
 ```
 
 
